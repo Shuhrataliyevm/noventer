@@ -1,0 +1,65 @@
+.contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    display: flex;
+    padding: 40px 20px;
+    position: relative;
+    top: 100px;
+    left: -800px;
+
+    .content {
+        width: 271px;
+        height: 120px;
+        border-radius: 16px;
+        background-color: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        position: relative;
+        color: white;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, #000, white, #000);
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        .content-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            height: 100%;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .text {
+                h5 {
+                    margin: 0;
+                    font-size: 18px;
+                    color: white;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
