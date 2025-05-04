@@ -1,13 +1,14 @@
 .contents {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 80px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 40px 20px;
-    position: relative;
-    top: 100px;
-    left: -800px;
-
+    position: absolute;
+    top: 510px;
+    left: 80px;
     .content {
         width: 271px;
         height: 120px;
@@ -42,22 +43,29 @@
             gap: 20px;
             height: 100%;
 
-            img {
-                width: 40px;
-                height: 40px;
-            }
-
             .text {
+                img{
+                    width: 68px;
+                    height: 68px;
+                }
                 h5 {
+                    width: 128px;
+                    height: 29px;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 100%;
+                    color: #FFFFFFD9;
                     margin: 0;
-                    font-size: 18px;
-                    color: white;
                 }
 
                 p {
+                    width: 128px;
+                    height: 22px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 100%;
+                    color: #FFFFFFD9;
                     margin: 0;
-                    font-size: 14px;
-                    color: white;
                 }
             }
         }
