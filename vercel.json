@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "next.config.ts",
-            "use": "@vercel/next"
+            "use": "@vercel/node"
         }
     ],
     "routes": [
