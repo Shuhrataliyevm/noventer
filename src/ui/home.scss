@@ -72,7 +72,9 @@
         background-color: #5A00DB;
 
         .clent-text {
-            padding: 25px 50px;
+            position: relative;
+            left: 30px;
+            top: -20px;
 
             h1 {
                 width: 327px;
@@ -84,7 +86,7 @@
             }
 
             p {
-                width: 167px;
+                width: 267px;
                 height: 22px;
 
                 height: 40px;
@@ -92,6 +94,8 @@
                 font-size: 18px;
                 line-height: 100%;
                 color: #FFFFFF;
+                margin-left: -15px;
+                margin-top: -10px;
             }
         }
     }
@@ -116,5 +120,140 @@
             transform: scale(1.1);
         }
     }
+
+
+
+    .clent {
+        text-align: center;
+        padding: 60px 0;
+        color: #fff;
+
+        .clent-text {
+            h1 {
+                font-size: 40px;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 20px;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .newcards {
+        background-color: #0E041D;
+        padding: 50px;
+        position: relative;
+        color: #fff;
+
+        .cards-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+
+            .card {
+                width: 427px;
+                height: 544px;
+                flex: 1 1 30%;
+                background-color: #FFFFFF1A;
+                backdrop-filter: blur(10px);
+                border-radius: 18px;
+                transition: all 0.3s ease-in-out;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                position: relative; 
+
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient(to right, #000, white, #000);
+                    z-index: 2;
+                }
+
+                &::before {
+                    top: 0;
+                }
+
+                &::after {
+                    bottom: 0;
+                }
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+                }
+
+                .image-wrapper {
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    margin-bottom: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 489px;
+                        height: 367px;
+                        object-fit: cover;
+                        display: block;
+                        border-radius: 12px;
+                    }
+                }
+
+                .text-content {
+                    padding: 25px;
+                    h3 {
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        opacity: 0.85;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .new,
+        .news {
+            position: absolute;
+            bottom: 0;
+            transform: translateY(50%);
+            z-index: 1;
+
+            img {
+                max-width: 160px;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .new {
+            left: 50px;
+        }
+
+        .news {
+            right: 50px;
+        }
+    }
+
 
 }

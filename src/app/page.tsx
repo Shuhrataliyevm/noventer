@@ -25,7 +25,7 @@ const HomePage = () => {
     <div className="containers">
       <div className="home">
         <div className="home-text">
-          <h1>Yuqori sifatdagi <br /> 
+          <h1>Yuqori sifatdagi <br />
             <span className='home-span-1'>aniqlikka asoslanib</span><br />
             <span className='home-span-2'>istalgan turdagi </span><br />
             <span className='home-span-3'>dasturlarni tayyorlaymiz</span>
@@ -74,7 +74,7 @@ const HomePage = () => {
             </div>
             <div className="text-content">
               <h3>Jamoamiz kengaymoqda</h3>
-              <p>Jamoamiz safi esa tobora kengaymoqda. Boshida - kishidan boshlangan faoliyatimiz hozirda -- kishi bilan davom etmoqda</p>
+              <p>Jamoamiz safi esa tobora <br /> kengaymoqda. Boshida - kishidan <br /> boshlangan faoliyatimiz hozirda <br /> -- kishi bilan davom etmoqda</p>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ const HomePage = () => {
         <div className="card-text">
           <p>
             Bu yerda esa yana ko’proq ma’lumotlar berilishi kerak. <br />
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br /> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <br /> electronic typesetting, remaining essentially unchanged.
           </p>
         </div>
 
