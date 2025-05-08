@@ -1,8 +1,8 @@
 .contact-section {
     width: 100%;
-    height: 600px;
+    height: 700px;
     padding: 60px 40px;
-    background: linear-gradient(135deg, #1a053e, #2b0d60);
+    background-color: #0E041D;
     color: #fff;
     font-family: "Segoe UI", sans-serif;
 
@@ -21,17 +21,45 @@
     }
 
     .contact-grid {
+        height: 470px;
         display: flex;
+        flex-wrap: wrap;
         gap: 40px;
         justify-content: center;
         align-items: flex-start;
 
-        .team {
-            flex: 1;
+        .team,
+        .form-box {
+            flex: 1 1 300px;
+            height: 470px;
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 24px;
             padding: 24px;
+            position: relative;
+            overflow: hidden;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(to right, #000, white, #000);
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+        }
+
+        .team {
+            max-width: 816px;
 
             h3 {
                 font-size: 24px;
@@ -40,10 +68,14 @@
 
             .team-grid {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 16px;
+                grid-template-columns: repeat(3, 266px);
+                height: 100%;
+                overflow-y: auto;
+                padding-right: 4px;
 
                 .member {
+                    width: 226px;
+                    height: 100px;
                     background: rgba(255, 255, 255, 0.1);
                     border: 1px solid rgba(255, 255, 255, 0.2);
                     border-radius: 16px;
@@ -83,11 +115,7 @@
         }
 
         .form-box {
-            flex: 0 0 320px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 24px;
-            padding: 24px;
+            max-width: 416px;
 
             .boxs {
                 margin-bottom: 24px;
@@ -160,7 +188,8 @@
             }
 
             .team-grid {
-                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+                justify-content: center;
             }
         }
     }

@@ -24,12 +24,10 @@ const Footer: React.FC = () => {
     const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         let value = e.target.value.replace(/[^\d+]/g, '');
 
-        // +998 bilan boshlanishini tekshiradi
         if (!value.startsWith('+998')) {
             value = '+998';
         }
 
-        // Maksimal uzunlik: +998 va 9 ta raqam (13 belgi)
         if (value.length > 13) {
             return;
         }
