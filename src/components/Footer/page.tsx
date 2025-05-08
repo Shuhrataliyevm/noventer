@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
                         />
                         <input
                             type="tel"
-                            placeholder="+998 __ ___ __ __"
+                            placeholder="Telefon raqamingiz"
                             value={phone}
                             onChange={handlePhoneChange}
                             required

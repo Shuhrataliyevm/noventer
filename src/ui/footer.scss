@@ -59,7 +59,7 @@
         }
 
         .team {
-            max-width: 816px;
+            max-width: 850px;
 
             h3 {
                 font-size: 24px;
@@ -74,8 +74,9 @@
                 padding-right: 4px;
 
                 .member {
-                    width: 226px;
+                    width: 246px;
                     height: 100px;
+                    cursor: pointer;
                     background: rgba(255, 255, 255, 0.1);
                     border: 1px solid rgba(255, 255, 255, 0.2);
                     border-radius: 16px;
@@ -118,6 +119,7 @@
             max-width: 416px;
 
             .boxs {
+                text-align: center;
                 margin-bottom: 24px;
 
                 h3 {
@@ -135,13 +137,18 @@
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+                align-items: center;
+                justify-content: center;
 
                 input {
-                    background: rgba(255, 255, 255, 0.1);
+                    width: 306px;
+                    height: 57px;
+                    background-color: #FFFFFF1A;
                     border: none;
-                    border-radius: 8px;
+                    border-radius: 10px;
                     padding: 14px 16px;
                     font-size: 14px;
+                    text-align: center;
                     color: #fff;
                     outline: none;
                     transition: background 0.2s;
@@ -156,6 +163,7 @@
                 }
 
                 button {
+                    width: 306px;
                     background: #7c3aed;
                     border: none;
                     border-radius: 8px;

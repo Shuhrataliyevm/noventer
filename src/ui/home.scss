@@ -4,7 +4,7 @@
         justify-content: center;
         position: relative;
         background-color: #0E041D;
-
+        margin: 0 auto;
         .home-text {
             margin-top: 50px;
             margin-left: 50px;
@@ -68,13 +68,13 @@
 
     .clent {
         width: 100%;
+        display: flex;
+        align-items: center;
         height: 150px;
         background-color: #5A00DB;
 
         .clent-text {
-            position: relative;
-            left: 30px;
-            top: -20px;
+            padding: 30px 50px;
 
             h1 {
                 width: 327px;
@@ -242,7 +242,6 @@
             img {
                 max-width: 160px;
                 border-radius: 12px;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
             }
         }
 
@@ -254,6 +253,4 @@
             right: 50px;
         }
     }
-
-
 }
