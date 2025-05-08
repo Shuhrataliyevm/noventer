@@ -6,7 +6,7 @@ import { toast } from 'sonner';
 
 const Footer: React.FC = () => {
     const [name, setName] = useState('');
-    const [phone, setPhone] = useState('+998');
+    const [phone, setPhone] = useState('Telefon raqamingiz');
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                 <div className="form-box">
                     <div className="boxs">
                         <h3>Bepul konsultatsiya</h3>
-                        <p>Loyihangiz bo‘yicha boshlang‘ich bepul konsultatsiya uchun ma’lumotlaringizni qoldiring.</p>
+                        <p>Loyihangiz bo‘yicha boshlang‘ich bepul <br /> konsultatsiya uchun ma’lumotlaringizni qoldiring.</p>
                     </div>
                     <form onSubmit={handleSubmit}>
                         <input

@@ -120,16 +120,23 @@
 
             .boxs {
                 text-align: center;
-                margin-bottom: 24px;
+                margin-bottom: 44px;
 
                 h3 {
-                    font-size: 20px;
+                    width: 364px;
+                    height: 36px;
+                    font-weight: 600;
+                    font-size: 30px;
+                    color: #FFFFFF;
                     margin-bottom: 8px;
                 }
 
                 p {
+                    width: 368px;
+                    height: 34px;
+                    font-weight: 400;
                     font-size: 14px;
-                    color: rgba(255, 255, 255, 0.75);
+                    color: #FFFFFF;
                 }
             }
 
@@ -149,7 +156,7 @@
                     padding: 14px 16px;
                     font-size: 14px;
                     text-align: center;
-                    color: #fff;
+                    color: #EEEEEEEE;
                     outline: none;
                     transition: background 0.2s;
 
@@ -158,13 +165,14 @@
                     }
 
                     &::placeholder {
-                        color: rgba(255, 255, 255, 0.6);
+                        color: #EEEEEEEE;
                     }
                 }
 
                 button {
                     width: 306px;
-                    background: #7c3aed;
+                    height: 47px;
+                    background: #5A00DB;
                     border: none;
                     border-radius: 8px;
                     padding: 14px;

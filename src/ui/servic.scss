@@ -1,0 +1,41 @@
+.conatainers{
+    background-color: #0E041D;
+    margin: 0 auto;
+
+    .tesktop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 250px;
+        margin-left: 70px;
+
+        h1{
+            width: 503px;
+            height: 232px;
+            font-weight: 700;
+            font-size: 48px;
+            color: #FFFFFF
+        }
+        .about-span1{
+            width: 463px;
+            height: 22px;
+            font-weight: 500;
+            font-size: 48px;
+            color: #FFFFFF
+        }
+        .about-span2{
+            width: 463px;
+            height: 22px;
+            font-weight: 700;
+            font-size: 48px;
+            color: #5A00DB;
+        }
+        .about-span3{
+            width: 463px;
+            height: 22px;
+            font-weight: 700;
+            font-size: 48px;
+            color: #FFFFFF
+        }
+    }
+}

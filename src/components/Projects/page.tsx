@@ -46,9 +46,6 @@ const Projects = () => {
             <div className="image">
                 <img src="/images/n1.png" alt="#" />
             </div>
-            <div className="imag">
-                <img src="/images/n1.png" alt="#" />
-            </div>
         </section>
     );
 };

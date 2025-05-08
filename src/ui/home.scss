@@ -160,11 +160,17 @@
                 height: 544px;
                 flex: 1 1 30%;
                 background-color: #FFFFFF1A;
+                cursor: pointer;
                 backdrop-filter: blur(10px);
                 border-radius: 18px;
                 transition: all 0.3s ease-in-out;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
                 position: relative; 
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 20px white;
+                }
 
                 &::before,
                 &::after {
@@ -184,12 +190,6 @@
                 &::after {
                     bottom: 0;
                 }
-
-                &:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-                }
-
                 .image-wrapper {
                     width: 100%;
                     height: auto;
@@ -226,8 +226,11 @@
         }
 
         .card-text {
-            font-size: 14px;
-            color: #ccc;
+            width: 1358px;
+            height: 76px;
+            font-weight: 400;
+            font-size: 18px;
+            color: #FFFFFF;
             margin-bottom: 40px;
             line-height: 1.7;
         }
