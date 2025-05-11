@@ -1,0 +1,16 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #0E041D; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    img {
+        width: 400px;
+        height: 400px;
+    }
+}

@@ -97,7 +97,6 @@ const HomePage = () => {
       <Projects />
       <Services />
 
-      {/* Back to Top Button */}
       {showButton && (
         <button onClick={scrollToTop} className="back-to-top">
           ↑
